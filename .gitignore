@@ -1,3 +1,4 @@
 ﻿.vs
 *.sln
 site
+.vs/config/applicationhost.config
