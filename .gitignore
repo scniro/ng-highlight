@@ -1,3 +1,4 @@
-﻿.vs
+﻿bower_components
+.vs
 *.sln
-site
+.vs/config/applicationhost.config
