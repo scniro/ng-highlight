@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 ﻿bower_components
 .vs
 *.sln
 .vs/config/applicationhost.config
+=======
+﻿.*
+*.sln
+site
+.vs/config/applicationhost.config
+>>>>>>> origin/master
