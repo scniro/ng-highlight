@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>ng-highlight</title>
+    <link rel="stylesheet" href="../src/ng-highlight.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+</head>
+<body>
+
+    <div ng-controller="ctrl">
+        <input type="text" ng-model="query" />
+
+        <table>
+            <tr ng-repeat="d in data | filter: query">
+                <td highlight="query">{{ d.name }}</td>
+                <td highlight="query">{{ d.age }}</td>
+                <td highlight="query">{{ d.ocupation }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="../src/ng-highlight.js"></script>
+</body>
+</html>
