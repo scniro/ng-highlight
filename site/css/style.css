@@ -41,21 +41,34 @@ header {
       color: dodgerblue; }
 
 section.data {
-  width: 80%;
-  margin: 0 auto; }
-
-table {
-  height: 24em;
-  display: block;
-  font-size: 10pt;
   margin: 0 auto;
+  width: 90%;
+  min-width: 86em; }
+  section.data table {
+    margin: 0 auto;
+    font-size: 10pt; }
+    section.data table thead {
+      padding-right: 17px;
+      background-color: #f29f5a;
+      color: white; }
+    section.data table th, section.data table td {
+      padding: 0.5em 1em; }
+      section.data table th:nth-child(1), section.data table td:nth-child(1) {
+        width: 10em; }
+      section.data table th:nth-child(2), section.data table td:nth-child(2) {
+        width: 10em; }
+      section.data table th:nth-child(3), section.data table td:nth-child(3) {
+        width: 4em; }
+      section.data table th:nth-child(4), section.data table td:nth-child(4) {
+        width: 20em; }
+      section.data table th:nth-child(5), section.data table td:nth-child(5) {
+        width: 10em; }
+      section.data table th:nth-child(6), section.data table td:nth-child(6) {
+        width: 34em; }
+
+table tbody, table thead {
+  display: block; }
+
+table tbody {
   overflow: auto;
-  width: 100%;
-  white-space: nowrap; }
-  table th, table td {
-    padding: 0.500em;
-    width: 10%; }
-    table th:last-child, table td:last-child {
-      width: 100%; }
-  table tr:nth-child(even) {
-    background-color: #ccc; }
+  height: 28em; }

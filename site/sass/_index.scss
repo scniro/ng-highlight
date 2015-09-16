@@ -31,31 +31,57 @@ header {
 }
 
 section.data {
-	width: 80%;
 	margin: 0 auto;
+	width: 90%;
+	min-width: 86em;
+
+	table {
+		margin: 0 auto;
+		font-size: 10pt;
+
+		thead {
+			padding-right: 17px;
+			background-color:#f29f5a;
+			color: white;
+		}
+
+		th, td {
+			padding: 0.5em 1em;
+
+			&:nth-child(1) {
+				width: 10em;
+			}
+
+			&:nth-child(2) {
+				width: 10em;
+			}
+
+			&:nth-child(3) {
+				width: 4em;
+			}
+
+			&:nth-child(4) {
+				width: 20em;
+			}
+
+			&:nth-child(5) {
+				width: 10em;
+			}
+
+			&:nth-child(6) {
+				width: 34em;
+			}
+		}
+	}
 }
 
-table {
-	height: 24em;
-	display: block;
-	font-size: 10pt;
-	margin: 0 auto;
-	overflow: auto;
-	width: 100%;
-	white-space:nowrap;
+table tbody, table thead
+{
+    display: block;
+}
 
-	th, td {
-		padding: 0.500em;
-		width: 10%;
-
-		&:last-child {
-			width: 100%;
-		}
-	}
-
-	tr {
-		&:nth-child(even) {
-			background-color: #ccc;
-		}
-	}
+table tbody 
+{
+   overflow: auto;
+   height: 28em;
 }

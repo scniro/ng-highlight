@@ -1,17 +1,15 @@
 ﻿function init() {
 
 	angular.module('ngHighlight', []).directive('highlight', [
-		function() {
+		function () {
 			return {
 				restrict: 'A',
 				scope: {
 					'highlight': '='
 				},
-				link: function(scope, elem, attrs) {
+				link: function (scope, elem, attrs) {
 
-					console.log('elem');
-
-					scope.$watch('highlight', function(newVal, oldVal) {
+					scope.$watch('highlight', function (newVal, oldVal) {
 
 						if (newVal && (newVal !== oldVal)) {
 							var r = RegExp('(' + newVal + ')', 'gi');
