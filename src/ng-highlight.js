@@ -1,9 +1,10 @@
 ﻿function init() {
 
-	angular.module('ngHighlight', []).directive('highlight', [
-		function () {
+	angular.module('ngHighlight', []).directive('highlight', ['$timeout',
+		function ($timeout) {
 			return {
 				restrict: 'A',
+				priority: 9999,
 				scope: {
 					'highlight': '='
 				},
@@ -11,7 +12,7 @@
 
 					scope.$watch('highlight', function (newVal, oldVal) {
 
-						if (newVal && (newVal !== oldVal)) {
+						if (newVal) {
 							var r = RegExp('(' + newVal + ')', 'gi');
 							var match = elem.text().match(r);
 

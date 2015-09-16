@@ -40,35 +40,36 @@ header {
       line-height: 135%;
       color: dodgerblue; }
 
-section.data {
-  margin: 0 auto;
-  width: 90%;
-  min-width: 86em; }
-  section.data table {
-    margin: 0 auto;
-    font-size: 10pt; }
-    section.data table thead {
-      padding-right: 17px;
-      background-color: #f29f5a;
-      color: white; }
-    section.data table th, section.data table td {
-      padding: 0.5em 1em; }
-      section.data table th:nth-child(1), section.data table td:nth-child(1) {
-        width: 10em; }
-      section.data table th:nth-child(2), section.data table td:nth-child(2) {
-        width: 10em; }
-      section.data table th:nth-child(3), section.data table td:nth-child(3) {
-        width: 4em; }
-      section.data table th:nth-child(4), section.data table td:nth-child(4) {
-        width: 20em; }
-      section.data table th:nth-child(5), section.data table td:nth-child(5) {
-        width: 10em; }
-      section.data table th:nth-child(6), section.data table td:nth-child(6) {
-        width: 34em; }
+section.data table {
+  font-size: 10pt; }
+  section.data table thead {
+    background-color: #f29f5a;
+    color: white;
+    display: block; }
+  section.data table tbody {
+    border-left: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    overflow: auto;
+    height: 27em;
+    display: block; }
+    section.data table tbody tr:nth-child(even) {
+      background-color: #EBEDF3; }
+  section.data table th, section.data table td {
+    padding: 0.5em 1em; }
+    section.data table th:nth-child(1), section.data table td:nth-child(1) {
+      width: 10em; }
+    section.data table th:nth-child(2), section.data table td:nth-child(2) {
+      width: 10em; }
+    section.data table th:nth-child(3), section.data table td:nth-child(3) {
+      width: 4em; }
+    section.data table th:nth-child(4), section.data table td:nth-child(4) {
+      width: 20em; }
+    section.data table th:nth-child(5), section.data table td:nth-child(5) {
+      width: 10em; }
+    section.data table th:nth-child(6), section.data table td:nth-child(6) {
+      width: 34em; }
 
-table tbody, table thead {
+input {
+  width: 100%;
   display: block; }
-
-table tbody {
-  overflow: auto;
-  height: 28em; }

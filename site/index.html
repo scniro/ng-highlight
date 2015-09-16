@@ -17,7 +17,7 @@
 			border: solid 1px #ccc;
 			border-radius: 4px;
 			color: #64b5c1;
-			padding: 0 0.25em;
+			padding: 0 0.250em;
 		}
 	</style>
 </head>
@@ -34,6 +34,7 @@
 
 	<section class="data">
 		<table>
+
 			<thead>
 				<tr>
 					<th>first</th>
@@ -45,7 +46,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="d in data | limitTo: 50 | filter: query">
+				<tr ng-repeat="d in data | filter: query | limitTo: 30">
 					<td highlight="query">{{ d.first }}</td>
 					<td highlight="query">{{ d.last }}</td>
 					<td>{{ d.gender }}</td>

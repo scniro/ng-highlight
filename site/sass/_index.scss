@@ -31,18 +31,29 @@ header {
 }
 
 section.data {
-	margin: 0 auto;
-	width: 90%;
-	min-width: 86em;
 
 	table {
-		margin: 0 auto;
 		font-size: 10pt;
 
 		thead {
-			padding-right: 17px;
-			background-color:#f29f5a;
+			background-color: #f29f5a;
 			color: white;
+			display: block;
+		}
+
+		tbody {
+			border-left: solid 1px #ccc;
+			border-bottom: solid 1px #ccc;
+			border-right: solid 1px #ccc;
+			overflow: auto;
+			height: 27em;
+			display: block;
+
+			tr {
+				&:nth-child(even) {
+					background-color: #EBEDF3;
+				}
+			}
 		}
 
 		th, td {
@@ -75,13 +86,7 @@ section.data {
 	}
 }
 
-table tbody, table thead
-{
-    display: block;
-}
-
-table tbody 
-{
-   overflow: auto;
-   height: 28em;
+input {
+	width: 100%;
+	display: block;
 }
