@@ -18,9 +18,8 @@ img {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  overflow: hidden;
   min-width: 58.000em;
-  overflow-x: auto; }
+  overflow: hidden; }
 
 header {
   width: 100%;
@@ -40,3 +39,23 @@ header {
       float: right;
       line-height: 135%;
       color: dodgerblue; }
+
+section.data {
+  width: 80%;
+  margin: 0 auto; }
+
+table {
+  height: 24em;
+  display: block;
+  font-size: 10pt;
+  margin: 0 auto;
+  overflow: auto;
+  width: 100%;
+  white-space: nowrap; }
+  table th, table td {
+    padding: 0.500em;
+    width: 10%; }
+    table th:last-child, table td:last-child {
+      width: 100%; }
+  table tr:nth-child(even) {
+    background-color: #ccc; }

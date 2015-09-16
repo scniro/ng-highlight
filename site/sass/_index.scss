@@ -1,8 +1,7 @@
 ﻿body {
 	font-family: 'Open Sans', sans-serif;
-	overflow: hidden;
 	min-width: 58.000em;
-	overflow-x: auto;
+	overflow: hidden;
 }
 
 header {
@@ -27,6 +26,36 @@ header {
 			float: right;
 			line-height: 135%;
 			color: $link;
+		}
+	}
+}
+
+section.data {
+	width: 80%;
+	margin: 0 auto;
+}
+
+table {
+	height: 24em;
+	display: block;
+	font-size: 10pt;
+	margin: 0 auto;
+	overflow: auto;
+	width: 100%;
+	white-space:nowrap;
+
+	th, td {
+		padding: 0.500em;
+		width: 10%;
+
+		&:last-child {
+			width: 100%;
+		}
+	}
+
+	tr {
+		&:nth-child(even) {
+			background-color: #ccc;
 		}
 	}
 }
