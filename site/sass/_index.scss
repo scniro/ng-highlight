@@ -30,6 +30,20 @@ header {
 	}
 }
 
+section.pane {
+		width: 50%;
+		box-sizing: border-box;
+		padding-right: 2.000em;
+
+		&.left {
+			float: left;
+		}
+
+		&.right {
+			float: right;
+		}
+	}
+
 section.data {
 
 	table {

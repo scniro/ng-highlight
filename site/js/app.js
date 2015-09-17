@@ -2,6 +2,45 @@
 
 app.controller('ctrl', ['$scope', 'dataService', function ($scope, dataService) {
 	$scope.data = dataService.getData();
+
+	$scope.tabs = [
+		{ 'title': 'Markup', 'url': 'template/markup.html' },
+		{ 'title': 'CSS', 'url': 'template/css.html' }
+	];
+}]);
+
+app.directive('tabs', [function () {
+	return {
+		restrict: 'E',
+		templateUrl: 'template/tabs.html',
+		scope: {
+			tabs: '=',
+			selected: '@'
+		},
+		link: function (scope, elem, attrs) {
+
+			scope.currentTab = scope.tabs[scope.selected].url;
+
+			scope.onClickTab = function (tab) {
+				scope.currentTab = tab.url;
+			}
+
+			scope.isActiveTab = function (tabUrl) {
+				return tabUrl === scope.currentTab;
+			}
+		}
+	}
+}]);
+
+app.directive('prism', [function () {
+	return {
+		restrict: 'A',
+		link: function (scope, elem, attrs) {
+			elem.ready(function () {
+				Prism.highlightElement(elem[0]);
+			});
+		}
+	}
 }]);
 
 app.factory('dataService', function() {

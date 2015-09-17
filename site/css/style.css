@@ -16,6 +16,41 @@ h1, h2, h3, h4, h5, h6, th, td, caption {
 img {
   border: 0; }
 
+pre, code {
+  font-size: 10pt; }
+
+pre[class*="language-shell"] {
+  background-color: #383838; }
+  pre[class*="language-shell"] code {
+    text-shadow: none;
+    color: white; }
+
+tabs .header {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 0.063em;
+  margin-top: -0.063em; }
+  tabs .header li {
+    float: left;
+    cursor: pointer;
+    padding: 0.5em 1em; }
+    tabs .header li.active {
+      background-color: #f5f2f0;
+      border-top: solid 0.063em #ccc;
+      border-left: solid 0.063em #ccc;
+      border-right: solid 0.063em #ccc;
+      border-bottom: solid 0.063em transparent; }
+    tabs .header li:not(.active):hover {
+      background-color: #ccc;
+      border-bottom: solid 0.063em #ccc; }
+
+tabs .body {
+  clear: both;
+  background-color: #f5f2f0;
+  border: solid 0.063em #ccc; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   min-width: 58.000em;
@@ -39,6 +74,15 @@ header {
       float: right;
       line-height: 135%;
       color: dodgerblue; }
+
+section.pane {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 2.000em; }
+  section.pane.left {
+    float: left; }
+  section.pane.right {
+    float: right; }
 
 section.data table {
   font-size: 10pt; }

@@ -5,6 +5,7 @@
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/prism.css" />
 	<link rel="stylesheet" href="css/style.css" />
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
@@ -30,11 +31,46 @@
 		<a href="https://github.com/scniro/ng-highlight" target="_blank"><i class="fa fa-github"></i></a>
 	</header>
 
+	<section class="pane left">
+		<div>
+			<pre><code prism class="language-shell">bower install ng-accordian</code></pre>
+		</div>
+
+		<ul>
+			<li>
+				Include the <code prism class="language-javascript">ngAccordian</code> module as a dependency in your AngularJS application
+			</li>
+		</ul>
+
+		<div>
+			<pre><code prism class="language-javascript">angular.module('app', ['ngAccordian'])</code></pre>
+		</div>
+
+		<ul>
+			<li>
+				Include the <code prism class="language-javascript">ng-accordian.css</code> style sheet
+			</li>
+		</ul>
+
+		<div>
+			<pre><code prism class="language-markup">&lt;link rel="stylesheet" href="/ng-accordian.css" /></code></pre>
+		</div>
+
+		<ul>
+			<li>
+				<i>badda bing, badda boom</i>
+			</li>
+		</ul>
+	</section>
+	<section class="pane right">
+		<tabs tabs="tabs" selected="0"></tabs>
+	</section>
+
+
 	<input type="text" ng-model="query" />
 
 	<section class="data">
 		<table>
-
 			<thead>
 				<tr>
 					<th>first</th>
@@ -58,6 +94,7 @@
 		</table>
 	</section>
 
+	<script src="lib/prism.js"></script>
 	<script src="js/app.js"></script>
 	<script src="../src/ng-highlight.js"></script>
 </body>
