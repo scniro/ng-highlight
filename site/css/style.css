@@ -75,6 +75,12 @@ header {
       line-height: 135%;
       color: dodgerblue; }
 
+.content {
+  height: 20em;
+  padding: 2em; }
+  .content h1 {
+    margin-top: 0; }
+
 section.pane {
   width: 50%;
   box-sizing: border-box;

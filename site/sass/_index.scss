@@ -30,6 +30,15 @@ header {
 	}
 }
 
+.content {
+	height: 20em;
+	padding: 2em;
+
+	h1 {
+		margin-top: 0;
+	}
+}
+
 section.pane {
 		width: 50%;
 		box-sizing: border-box;

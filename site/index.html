@@ -18,7 +18,7 @@
 			border: solid 1px #ccc;
 			border-radius: 4px;
 			color: #64b5c1;
-			padding: 0 0.250em;
+			padding: 4px;
 		}
 	</style>
 </head>
@@ -31,40 +31,41 @@
 		<a href="https://github.com/scniro/ng-highlight" target="_blank"><i class="fa fa-github"></i></a>
 	</header>
 
-	<section class="pane left">
-		<div>
-			<pre><code prism class="language-shell">bower install ng-accordian</code></pre>
-		</div>
+	<div class="content">
+		<section class="pane left">
 
-		<ul>
-			<li>
-				Include the <code prism class="language-javascript">ngAccordian</code> module as a dependency in your AngularJS application
-			</li>
-		</ul>
+			<h1>getting started</h1>
 
-		<div>
-			<pre><code prism class="language-javascript">angular.module('app', ['ngAccordian'])</code></pre>
-		</div>
+			<div>
+				<pre><code prism class="language-shell">bower install ng-highlight</code></pre>
+			</div>
 
-		<ul>
-			<li>
-				Include the <code prism class="language-javascript">ng-accordian.css</code> style sheet
-			</li>
-		</ul>
+			<ul>
+				<li>
+					Include the <code prism class="language-javascript">ngHighlight</code> module as a dependency in your AngularJS application
+				</li>
+			</ul>
 
-		<div>
-			<pre><code prism class="language-markup">&lt;link rel="stylesheet" href="/ng-accordian.css" /></code></pre>
-		</div>
+			<div>
+				<pre><code prism class="language-javascript">angular.module('app', ['ngHighlight'])</code></pre>
+			</div>
 
-		<ul>
-			<li>
-				<i>badda bing, badda boom</i>
-			</li>
-		</ul>
-	</section>
-	<section class="pane right">
-		<tabs tabs="tabs" selected="0"></tabs>
-	</section>
+			<ul>
+				<li>
+					Define a <code prism class="language-css">.highlight { }</code> class to your liking
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+					<i>badda bing, badda boom</i>
+				</li>
+			</ul>
+		</section>
+		<section class="pane right">
+			<tabs tabs="tabs" selected="0"></tabs>
+		</section>
+	</div>
 
 
 	<input type="text" ng-model="query" />
