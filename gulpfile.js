@@ -27,7 +27,7 @@ gulp.task('sass:watch', function () {
 	gulp.watch('site/sass/*.scss', ['sass']);
 });
 
-gulp.task('minify-js', ['clean-js-dist'], function () {
+gulp.task('minify-js', ['clean-js'], function () {
 	return gulp.src('src/*.js')
 		.pipe(uglify())
 		.pipe(rename({
@@ -36,7 +36,7 @@ gulp.task('minify-js', ['clean-js-dist'], function () {
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('clean-js-dist', function (done) {
+gulp.task('clean-js', function (done) {
 	var file = 'dist/ng-highlight.min.js';
 	util.log(util.colors.green('cleaning'), ' -- ', util.colors.yellow(file));
 	del(file, done);
