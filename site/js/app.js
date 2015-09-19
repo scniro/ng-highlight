@@ -1,6 +1,20 @@
-﻿var app = angular.module('app', ['ngHighlight']);
+﻿var app = angular.module('app', ['ui.router', 'ngHighlight']);
+
+app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
+
+	$locationProvider.html5Mode({
+		enabled: true
+	});
+
+	$stateProvider
+		.state('home', {
+			url: '/',
+			controller: 'ctrl'
+		});
+}]);
 
 app.controller('ctrl', ['$scope', 'dataService', function ($scope, dataService) {
+
 	$scope.data = dataService.getData();
 
 	$scope.tabs = [

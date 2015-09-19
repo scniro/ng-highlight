@@ -2,6 +2,7 @@
 <html ng-app="app">
 <head>
 	<title>ngHighlight</title>
+	<base href="/site/" />
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -9,6 +10,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 	<style>
 		.ng-cloak {
 			display: none !important;
@@ -22,7 +24,7 @@
 		}
 	</style>
 </head>
-<body class="ng-cloak" ng-controller="ctrl">
+<body class="ng-cloak" ui-view>
 	<header>
 		<h1>
 			ngHighlight
