@@ -23,7 +23,7 @@ app.controller('ctrl', ['$scope', 'dataService', function ($scope, dataService) 
 	];
 }]);
 
-app.directive('tabs', [function () {
+app.directive('tabs', ['$timeout', function ($timeout) {
 	return {
 		restrict: 'E',
 		templateUrl: 'demo-site/template/tabs.html',
@@ -33,14 +33,16 @@ app.directive('tabs', [function () {
 		},
 		link: function (scope, elem, attrs) {
 
-			scope.currentTab = scope.tabs[scope.selected].url;
+			if (scope.tabs) {
+				scope.currentTab = scope.tabs[scope.selected].url;
 
-			scope.onClickTab = function (tab) {
-				scope.currentTab = tab.url;
-			}
+				scope.onClickTab = function (tab) {
+					scope.currentTab = tab.url;
+				}
 
-			scope.isActiveTab = function (tabUrl) {
-				return tabUrl === scope.currentTab;
+				scope.isActiveTab = function (tabUrl) {
+					return tabUrl === scope.currentTab;
+				}
 			}
 		}
 	}

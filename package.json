@@ -1,8 +1,10 @@
 {
-  "name": "ng-accordian",
+  "name": "ngHighlight",
   "version": "0.0.1",
   "description": "A small AngularJS directive to pair highlighting with filtering",
-  "dependencies": {},
+  "dependencies": {
+    "angular": "^1.2"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",

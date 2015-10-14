@@ -5,15 +5,18 @@
 
 header {
 	width: 100%;
-	border-bottom: solid 0.063em $gray-darker;
 	box-sizing: border-box;
 	padding: 0.500em 2.000em;
-	height: 6.000em;
+	height: 4.000em;
+	background-color: $header;
+	overflow: hidden;
 
 	h1 {
 		display: inline;
-		font-size: 42pt;
-		letter-spacing: 2px;
+		font-size: 20pt;
+		letter-spacing: 0.125em;
+		color: $white;
+		line-height: 180%;
 	}
 
 	a {
@@ -21,10 +24,18 @@ header {
 		color: inherit;
 
 		&:nth-child(2) {
-			font-size: 42pt;
 			float: right;
-			line-height: 135%;
-			color: $link;
+			position: relative;
+			top: 1.750em;
+			transition: .10s ease-in;
+
+			img {
+				width: 8.000em;
+			}
+
+			&:hover {
+				transform: translateY(-1.875em);
+			}
 		}
 	}
 }

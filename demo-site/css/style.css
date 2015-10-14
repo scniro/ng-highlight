@@ -57,22 +57,30 @@ body {
 
 header {
   width: 100%;
-  border-bottom: solid 0.063em #ccc;
   box-sizing: border-box;
   padding: 0.5em 2em;
-  height: 6.000em; }
+  height: 4.000em;
+  background-color: #D97F35;
+  overflow: hidden; }
   header h1 {
     display: inline;
-    font-size: 42pt;
-    letter-spacing: 2px; }
+    font-size: 20pt;
+    letter-spacing: 0.125em;
+    color: #FFF;
+    line-height: 180%; }
   header a {
     text-decoration: none;
     color: inherit; }
     header a:nth-child(2) {
-      font-size: 42pt;
       float: right;
-      line-height: 135%;
-      color: dodgerblue; }
+      position: relative;
+      top: 1.750em;
+      transition: .10s ease-in; }
+      header a:nth-child(2) img {
+        width: 8.000em; }
+      header a:nth-child(2):hover {
+        -webkit-transform: translateY(-1.875em);
+        transform: translateY(-1.875em); }
 
 .content {
   height: 20.000em;
@@ -101,14 +109,14 @@ section.data {
     border: none;
     border: solid 1px #ccc;
     padding: 0.500em;
-    color: #64b5c1; }
+    color: #6A83BC; }
     section.data input:focus {
       outline: none; }
   section.data table {
     font-size: 10pt;
     margin: 0 auto; }
     section.data table thead {
-      background-color: #f29f5a;
+      background-color: #6A83BC;
       color: white;
       display: block; }
     section.data table tbody {
