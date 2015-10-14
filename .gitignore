@@ -1,6 +1,11 @@
-﻿﻿bower_components
-.vs
-*.sln
-.vs/config/applicationhost.config
-﻿.*
+bin
+bower_components
 node_modules
+obj
+Properties
+*.config
+*.cs
+*.csproj
+*.user
+*.sln
+*.ico

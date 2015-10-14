@@ -1,0 +1,29 @@
+{
+  "name": "ng-highlight",
+  "version": "0.0.1",
+  "homepage": "https://github.com/scniro/ng-highlight",
+  "authors": [
+    "Sal Niro @scniro"
+  ],
+  "description": "A small AngularJS directive to pair highlighting with filtering.",
+  "main": "ng-highlight.js",
+  "keywords": [
+    "highlight",
+    "angular",
+    "angularjs",
+	"nghighlight",
+	"angularui",
+	"angularstrap",
+	"bootstrap"
+  ],
+  "license": "GPL-2.0",
+  "dependencies": {
+    "angular": "^1.2"
+  },
+  "ignore": [
+    "**/.*",
+	"bower_components",
+	"node_modules",
+	"demo-site"
+  ]
+}

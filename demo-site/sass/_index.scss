@@ -1,0 +1,128 @@
+﻿body {
+	font-family: 'Open Sans', sans-serif;
+	min-width: 58.000em;
+}
+
+header {
+	width: 100%;
+	border-bottom: solid 0.063em $gray-darker;
+	box-sizing: border-box;
+	padding: 0.500em 2.000em;
+	height: 6.000em;
+
+	h1 {
+		display: inline;
+		font-size: 42pt;
+		letter-spacing: 2px;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:nth-child(2) {
+			font-size: 42pt;
+			float: right;
+			line-height: 135%;
+			color: $link;
+		}
+	}
+}
+
+.content {
+	height: 20.000em;
+	padding: 2.000em;
+
+	h1 {
+		margin-top: 0;
+	}
+}
+
+section.pane {
+	width: 50%;
+	box-sizing: border-box;
+	padding-right: 2.000em;
+
+	&.left {
+		float: left;
+	}
+
+	&.right {
+		float: right;
+	}
+}
+
+section.data {
+	margin-bottom: 2.000em;
+
+	input {
+		width: 50%;
+		margin: 0 auto;
+		display: block;
+		font-size: 20pt;
+		margin-bottom: 1.500em;
+		border-radius: 0.500em;
+		border: none;
+		border: solid 1px $gray-darker;
+		padding: 0.500em;
+		color: $highlight;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	table {
+		font-size: 10pt;
+		margin: 0 auto;
+
+		thead {
+			background-color: $table-accent;
+			color: white;
+			display: block;
+		}
+
+		tbody {
+			border-left: solid 1px $gray-darker;
+			border-bottom: solid 1px $gray-darker;
+			border-right: solid 1px $gray-darker;
+			overflow: auto;
+			height: 27.000em;
+			display: block;
+
+			tr {
+				&:nth-child(even) {
+					background-color: $gray-lighter;
+				}
+			}
+		}
+
+		th, td {
+			padding: 0.500em 1.000em;
+
+			&:nth-child(1) {
+				width: 10.000em;
+			}
+
+			&:nth-child(2) {
+				width: 10.000em;
+			}
+
+			&:nth-child(3) {
+				width: 4.000em;
+			}
+
+			&:nth-child(4) {
+				width: 20.000em;
+			}
+
+			&:nth-child(5) {
+				width: 10.000em;
+			}
+
+			&:nth-child(6) {
+				width: 34.000em;
+			}
+		}
+	}
+}
