@@ -1,5 +1,7 @@
 ﻿# ngHighlight
-A small AngularJS directive to pair highlighting with filtering 
+A small AngularJS directive to pair highlighting with filtering
+
+ - [demo site](http://ng-highlight.azurewebsites.net/)
 
 # Getting Started
 
