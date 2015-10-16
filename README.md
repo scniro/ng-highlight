@@ -1,7 +1,7 @@
 ﻿# ngHighlight
 A small AngularJS directive to pair highlighting with filtering
 
- - [demo site](http://ng-highlight.azurewebsites.net/)
+ - [demo/api](http://ng-highlight.azurewebsites.net/)
 
 # Getting Started
 
@@ -14,7 +14,3 @@ bower install ng-highlight
 ```javascript
 angular.module('app', ['ngHighlight'])
 ```
-
-# Core Team Members
-
- - [@scniro](https://twitter.com/scniro)
