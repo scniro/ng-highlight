@@ -1,6 +1,6 @@
 {
 	"name": "ngHighlight",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "A small AngularJS directive to pair highlighting with filtering",
 	"dependencies": {
 		"angular": "^1.2"
@@ -17,7 +17,7 @@
 		"type": "git",
 		"url": "git+https://github.com/scniro/ng-highlight.git"
 	},
-	"author": "Sal Niro salvatore.niro@outlook.com",
+	"author": "Sal Niro <salvatore.niro@outlook.com>",
 	"license": "GPL-2.0",
 	"bugs": {
 		"url": "https://github.com/scniro/ng-highlight/issues"
