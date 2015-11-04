@@ -1,101 +1,100 @@
 ﻿<!DOCTYPE html>
 <html ng-app="app">
 <head>
-	<title>ngHighlight</title>
-	<base href="/" />
+    <title>ngHighlight</title>
+    <base href="/" />
 
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="demo-site/lib/prism.css" />
-	<link rel="stylesheet" href="demo-site/css/style.css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="demo-site/lib/prism.css" />
+    <link rel="stylesheet" href="demo-site/css/style.css" />
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-	<style>
-		.ng-cloak {
-			display: none !important;
-		}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <style>
+        .ng-cloak {
+            display: none !important;
+        }
 
-		.highlight {
-			border: solid 1px #ccc;
-			border-radius: 4px;
-			color: #F29F5A;
-			padding: 4px;
-		}
-	</style>
+        .highlight {
+            border: solid 1px #ccc;
+            border-radius: 4px;
+            color: #F29F5A;
+            padding: 4px;
+        }
+    </style>
 </head>
 <body class="ng-cloak" ui-view>
-	<header>
-		<h1>
-			ngHighlight
-		</h1>
+    <header>
+        <h1>
+            ngHighlight
+        </h1>
 
-		<a href="https://github.com/scniro/ng-highlight" target="_blank">
-			<img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" />
-		</a>
-	</header>
+        <a href="https://github.com/scniro/ng-highlight" target="_blank">
+            <img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" />
+        </a>
+    </header>
 
-	<div class="content">
-		<section class="pane left">
+    <div class="content">
+        <section class="pane left">
 
-			<h2>getting started</h2>
+            <h2>getting started</h2>
 
-			<div>
-				<pre><code prism class="language-shell">bower install ng-highlight</code></pre>
-			</div>
+            <div>
+                <pre><code prism class="language-shell">bower install ng-highlight</code></pre>
+            </div>
 
-			<ul>
-				<li>
-					Include the <code prism class="language-javascript">ngHighlight</code> module as a dependency in your AngularJS application
-				</li>
-			</ul>
+            <ul>
+                <li>
+                    Include the <code prism class="language-javascript">ngHighlight</code> module as a dependency in your AngularJS application
+                </li>
+            </ul>
 
-			<div>
-				<pre><code prism class="language-javascript">angular.module('app', ['ngHighlight'])</code></pre>
-			</div>
+            <div>
+                <pre><code prism class="language-javascript">angular.module('app', ['ngHighlight'])</code></pre>
+            </div>
 
-			<ul>
-				<li>
-					Define a <code prism class="language-css">.highlight { }</code> class to your liking
-				</li>
-			</ul>
+            <ul>
+                <li>
+                    Define a <code prism class="language-css">.highlight { }</code> class to your liking
+                </li>
+            </ul>
 
-		</section>
-		<section class="pane right">
-			<tabs tabs="tabs" selected="0"></tabs>
-		</section>
-	</div>
+        </section>
+        <section class="pane right">
+            <tabs tabs="tabs" selected="0"></tabs>
+        </section>
+    </div>
 
-	<section class="data">
+    <section class="data">
 
-		<input ng-model="query" placeholder="filter..." />
+        <input ng-model="query" placeholder="filter..." />
 
-		<table>
-			<thead>
-				<tr>
-					<th>first</th>
-					<th>last</th>
-					<th>gender</th>
-					<th>email</th>
-					<th>phone</th>
-					<th>address</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat="d in data | filter: query | limitTo: 30">
-					<td highlight="query">{{ d.first }}</td>
-					<td highlight="query">{{ d.last }}</td>
-					<td>{{ d.gender }}</td>
-					<td highlight="query">{{ d.email }}</td>
-					<td highlight="query">{{ d.phone }}</td>
-					<td highlight="query">{{ d.address }}</td>
-				</tr>
-			</tbody>
-		</table>
-	</section>
+        <table>
+            <thead>
+                <tr>
+                    <th>first</th>
+                    <th>last</th>
+                    <th>gender</th>
+                    <th>email</th>
+                    <th>phone</th>
+                    <th>address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="d in data | filter: query | limitTo: 30">
+                    <td highlight="query">{{ d.first }}</td>
+                    <td highlight="query">{{ d.last }}</td>
+                    <td>{{ d.gender }}</td>
+                    <td highlight="query">{{ d.email }}</td>
+                    <td highlight="query">{{ d.phone }}</td>
+                    <td highlight="query">{{ d.address }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-	<script src="demo-site/lib/prism.js"></script>
-	<script src="demo-site/js/app.js"></script>
-	<script src="ng-highlight/src/ng-highlight.js"></script>
+    <script src="demo-site/lib/prism.js"></script>
+    <script src="demo-site/js/app.js"></script>
+    <script src="ng-highlight/src/ng-highlight.js"></script>
 </body>
 </html>
