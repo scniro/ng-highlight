@@ -1,26 +1,27 @@
 {
-    "name": "ngHighlight",
-    "version": "1.0.0",
-    "description": "A small AngularJS directive to pair highlighting with filtering",
-    "dependencies": {
-        "angular": "^1.2"
-    },
-    "devDependencies": {
-        "gulp": "^3.9.0",
-        "gulp-autoprefixer": "^2.3.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^2.0.4",
-        "gulp-uglify": "^1.3.0",
-        "node-sass": "^3.2.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/scniro/ng-highlight.git"
-    },
-    "author": "Sal Niro <salvatore.niro@outlook.com>",
-    "license": "GPL-2.0",
-    "bugs": {
-        "url": "https://github.com/scniro/ng-highlight/issues"
-    },
-    "homepage": "https://github.com/scniro/ng-highlight#readme"
+  "name": "ngHighlight",
+  "version": "1.0.0",
+  "description": "A small AngularJS directive to pair highlighting with filtering",
+  "dependencies": {
+    "angular": "^1.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.3.0",
+    "node-sass": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scniro/ng-highlight.git"
+  },
+  "author": "Sal Niro <salvatore.niro@outlook.com>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/scniro/ng-highlight/issues"
+  },
+  "homepage": "https://github.com/scniro/ng-highlight#readme"
 }

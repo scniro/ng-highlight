@@ -1,139 +1,143 @@
 ﻿body {
-	font-family: 'Open Sans', sans-serif;
-	min-width: 58.000em;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 58.000em;
 }
 
 header {
-	width: 100%;
-	box-sizing: border-box;
-	padding: 0.500em 2.000em;
-	height: 4.000em;
-	background-color: $header;
-	overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.500em 2.000em;
+    height: 4.000em;
+    background-color: $accent;
+    overflow: hidden;
 
-	h1 {
-		display: inline;
-		font-size: 20pt;
-		letter-spacing: 0.125em;
-		color: $white;
-		line-height: 180%;
-	}
+    h1 {
+        display: inline;
+        font-size: 20pt;
+        letter-spacing: 0.125em;
+        color: white;
+        line-height: 180%;
 
-	a {
-		text-decoration: none;
-		color: inherit;
+        i {
+            color: $accent-3;
+        }
+    }
 
-		&:nth-child(2) {
-			float: right;
-			position: relative;
-			top: 1.750em;
-			transition: .10s ease-in;
+    a {
+        text-decoration: none;
+        color: inherit;
 
-			img {
-				width: 8.000em;
-			}
+        &:nth-child(2) {
+            float: right;
+            position: relative;
+            top: 1.750em;
+            transition: .10s ease-in;
 
-			&:hover {
-				transform: translateY(-1.875em);
-			}
-		}
-	}
+            img {
+                width: 8.000em;
+            }
+
+            &:hover {
+                transform: translateY(-1.875em);
+            }
+        }
+    }
 }
 
 .content {
-	height: 20.000em;
-	padding: 2.000em;
+    height: 20.000em;
+    padding: 2.000em;
 
-	h2 {
-		margin-top: 0;
-	}
+    h2 {
+        margin-top: 0;
+    }
 }
 
 section.pane {
-	width: 50%;
-	box-sizing: border-box;
-	padding-right: 2.000em;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 2.000em;
 
-	&.left {
-		float: left;
-	}
+    &.left {
+        float: left;
+    }
 
-	&.right {
-		float: right;
-	}
+    &.right {
+        float: right;
+    }
 }
 
 section.data {
-	margin-bottom: 2.000em;
+    margin-bottom: 2.000em;
 
-	input {
-		width: 50%;
-		margin: 0 auto;
-		display: block;
-		font-size: 20pt;
-		margin-bottom: 1.500em;
-		border-radius: 0.500em;
-		border: none;
-		border: solid 1px $gray-darker;
-		padding: 0.500em;
-		color: $highlight;
+    input {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        font-size: 20pt;
+        margin-bottom: 1.500em;
+        border-radius: 0.500em;
+        border: none;
+        border: solid 1px $gray-darker;
+        padding: 0.500em;
+        color: $highlight;
 
-		&:focus {
-			outline: none;
-		}
-	}
+        &:focus {
+            outline: none;
+        }
+    }
 
-	table {
-		font-size: 10pt;
-		margin: 0 auto;
+    table {
+        font-size: 10pt;
+        margin: 0 auto;
 
-		thead {
-			background-color: $table-accent;
-			color: white;
-			display: block;
-		}
+        thead {
+            background-color: $contrast-1;
+            color: white;
+            display: block;
+        }
 
-		tbody {
-			border-left: solid 1px $gray-darker;
-			border-bottom: solid 1px $gray-darker;
-			border-right: solid 1px $gray-darker;
-			overflow: auto;
-			height: 27.000em;
-			display: block;
+        tbody {
+            border-left: solid 1px $gray-darker;
+            border-bottom: solid 1px $gray-darker;
+            border-right: solid 1px $gray-darker;
+            overflow: auto;
+            height: 27.000em;
+            display: block;
 
-			tr {
-				&:nth-child(even) {
-					background-color: $gray-lighter;
-				}
-			}
-		}
+            tr {
+                &:nth-child(even) {
+                    background-color: $gray-lighter;
+                }
+            }
+        }
 
-		th, td {
-			padding: 0.500em 1.000em;
+        th, td {
+            padding: 0.500em 1.000em;
 
-			&:nth-child(1) {
-				width: 10.000em;
-			}
+            &:nth-child(1) {
+                width: 10.000em;
+            }
 
-			&:nth-child(2) {
-				width: 10.000em;
-			}
+            &:nth-child(2) {
+                width: 10.000em;
+            }
 
-			&:nth-child(3) {
-				width: 4.000em;
-			}
+            &:nth-child(3) {
+                width: 4.000em;
+            }
 
-			&:nth-child(4) {
-				width: 20.000em;
-			}
+            &:nth-child(4) {
+                width: 20.000em;
+            }
 
-			&:nth-child(5) {
-				width: 10.000em;
-			}
+            &:nth-child(5) {
+                width: 10.000em;
+            }
 
-			&:nth-child(6) {
-				width: 34.000em;
-			}
-		}
-	}
+            &:nth-child(6) {
+                width: 34.000em;
+            }
+        }
+    }
 }
